@@ -1,0 +1,33 @@
+body {
+	color: #8f8f8f;
+	font: 12px Tahoma, sans-serif;
+	background-color: #f8f8f8;
+	border-top: 5px solid #7e7e7e;
+	margin: 0;
+}
+
+.button-start {
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: rgb(255,255,255);
+  padding: .7em 1.5em;
+  outline: none;
+	opacity: 0;
+}
+.button-start:hover {
+  background: rgb(232,95,76); 
+  }
+
+.button-start:active {
+  background: rgb(152,15,0);
+  }
+
+.button-start {
+	margin: 20px 0;
+}
+
+.background-startscreen{
+  max-width: auto;
+  height:1%;
+}
