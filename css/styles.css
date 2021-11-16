@@ -16,7 +16,7 @@ body {
 	opacity: 0;
 }
 .button-start:hover {
-  background: rgb(232,95,76); 
+  background: rgb(232,95,76);
   }
 
 .button-start:active {
@@ -30,4 +30,5 @@ body {
 .background-startscreen{
   max-width: auto;
   height:1%;
+ border: none;
 }
