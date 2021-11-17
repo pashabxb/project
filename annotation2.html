@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style2.css">
+	<title>Аннотация</title>
+</head>
+	<body>
+		<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
+		<div class="book">
+			<img src="img/page2/book.png" alt="книга" class="book">
+			<img src="img/tasks/syezd-knyazey.png" alt="Съезд князей" class="pic">
+			<div class="img_text">Подпись картинки</div>
+			<div class="main_text">Основной текст</div>
+			<a href="#"  class="next_page">
+        <!-- Тут в кнопке переход на уровень, можно сделать подпись типа "начать игру" или что-то такое. -->
+				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-left.png" alt="вперёд" class="next_page">
+			</a>
+			<a href="#"  class="previous_page">
+				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
+			</a>
+		</div>
+		<div class="point">
+			<img src="img/points.png" alt="очки" class="point">
+			<output name="number" class="point">0 Баллов</output>
+		</div>
+	</body>
+</html>

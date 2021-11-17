@@ -13,14 +13,14 @@ a:focus,a:active{outline: none;+}
 
 @font-face {
 font-family: "PaladinRus";
-src: url("../fonts/ofont_ru_PaladinRus.ttf") format("truetype"); 
-font-style: normal; 
+src: url("../fonts/ofont_ru_PaladinRus.ttf") format("truetype");
+font-style: normal;
 font-weight: normal;
  }
  @font-face {
-font-family: "AleksandraC";  
-src: url("../fonts/ofont_ru_AleksandraC.ttf") format("truetype"); 
-font-style: normal; 
+font-family: "AleksandraC";
+src: url("../fonts/ofont_ru_AleksandraC.ttf") format("truetype");
+font-style: normal;
 font-weight: normal;
  }
 
@@ -128,4 +128,47 @@ output.point{
 	font-size: 3vw;
 	color: #ECC28D;
 	border: none;
+}
+div.text{
+	font-family: AleksandraC;
+	color: rgba(0, 0, 0, 1);
+}
+div.img_text{
+	font-size: 14pt ;
+	position: absolute;
+	top: 67%;
+	left: 12%;
+	width: 30%;
+	height: 25%;
+	border: none;
+	text-align: center;
+}
+div.main_text{
+	word-spacing:12px;
+	line-height:1.2;
+	font-size: 18pt;
+	position: absolute;
+	top: 16%;
+	left: 53.5%;
+	width: 38%;
+	height: 25%;
+	border: none;
+	text-align: justify;
+	text-shadow:  2px 2px 3px grey, 0 0 2em grey;
+
+}
+ol{
+	word-spacing:12px;
+	line-height:1.1;
+	font-size: 19pt;
+	position: absolute;
+	top: 13%;
+	left: 52%;
+	width: 41%;
+	height: 25%;
+	border: none;
+	text-align: left;
+}
+li{
+	margin-bottom: 1em;
 }
