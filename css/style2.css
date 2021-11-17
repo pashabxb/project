@@ -1,0 +1,131 @@
+*{
+	padding: 0: ;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;+}
+
+@font-face {
+font-family: "PaladinRus";
+src: url("../fonts/ofont_ru_PaladinRus.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+ @font-face {
+font-family: "AleksandraC";  
+src: url("../fonts/ofont_ru_AleksandraC.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #000;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+	background-image: url('../img/mainback.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+div.book{
+	position: absolute;
+	top: 10%;
+	left: 16%;
+	border: none;
+	width: 70%;
+	height: 90%;
+	display: block;
+}
+img.book{
+	width: 100%;
+	height: 100%;
+}
+img.pic{
+	position: absolute;
+	top: 10%;
+	left: 12%;
+	width: 30%;
+}
+img.bookmark{
+	position: absolute;
+	top: -2%;
+	left: 15.5%;
+	width: 17%;
+	z-index: ;
+}
+a.next_page{
+	position: absolute;
+	top: 87%;
+	left: 86%;
+	width: 8%;
+	border: none;
+}
+img.next_page{
+	width: 100%;
+	height: 100%;
+}
+a.previous_page{
+	position: absolute;
+	top: 87.5%;
+	left: 5%;
+	width: 8%;
+	border: none;
+}
+img.previous_page{
+	width: 100%;
+	height: 100%;
+}
+div.point{
+	position: absolute;
+	top: -0.5%;
+	left: 70%;
+	width: 19%;
+	height: 14%;
+	border: none;
+	display: block;
+}
+img.point{
+	width: 100%;
+	height: 100%;
+}
+output.point{
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	left: 0%;
+	width: 100%;
+	height:100%;
+	font-family: PaladinRus;
+	font-size: 3vw;
+	color: #ECC28D;
+	border: none;
+}
