@@ -75,12 +75,29 @@ img.pic{
 	left: 12%;
 	width: 30%;
 }
+img.pic_annotation{
+	position: absolute;
+	top: 20%;
+	left: 7%;
+	width: 40%;
+	border: solid;
+	border-color: #15590D;
+	border-radius: 5%;
+}
 img.bookmark{
 	position: absolute;
 	top: -2%;
 	left: 15.5%;
 	width: 17%;
 	z-index: ;
+}
+div.sheet{
+	display: inline-block;
+}
+img.sheet{
+	position: absolute;
+	width: 35%;
+	left: 20%;
 }
 a.next_page{
 	position: absolute;
@@ -134,40 +151,63 @@ div.text{
 	color: rgba(0, 0, 0, 1);
 }
 div.img_text{
-	font-size: 14pt ;
+	font-size: 1.2vw ;
 	position: absolute;
-	top: 67%;
+	top: 73%;
 	left: 12%;
 	width: 30%;
-	height: 25%;
+	height: 10%;
 	border: none;
 	text-align: center;
+	display: block;
 }
 div.main_text{
-	word-spacing:12px;
-	line-height:1.2;
-	font-size: 18pt;
+	word-spacing:0;
+	line-height:1.6vw;
+	font-size: 1.4vw;
 	position: absolute;
 	top: 16%;
 	left: 53.5%;
 	width: 38%;
-	height: 25%;
+	height: 70%;
 	border: none;
 	text-align: justify;
 	text-shadow:  2px 2px 3px grey, 0 0 2em grey;
-
 }
-ol{
-	word-spacing:12px;
-	line-height:1.1;
-	font-size: 19pt;
+div.main_text_annot{
+	word-spacing:0;
+	line-height:1.6vw;
+	font-size: 1.1vw;
 	position: absolute;
 	top: 13%;
+	left: 53.5%;
+	width: 38%;
+	height: 70%;
+	border: none;
+	text-align: justify;
+	text-shadow:  2px 2px 3px grey, 0 0 2em grey;
+}
+.p_main_text_annot:first-letter{
+		font-family: PaladinRus;
+		font-size: 5vw;
+}/*Первая буква другим шрифтом*/
+
+.p_main_text_annot_def{
+	text-indent: 10%;
+}
+
+ol{
+	word-spacing:0.1vw;
+	line-height:1.4vw;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 12%;
 	left: 52%;
 	width: 41%;
-	height: 25%;
+	height: 80%;
 	border: none;
 	text-align: left;
+	border: none;
 }
 li{
 	margin-bottom: 1em;
