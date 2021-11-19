@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style2.css">
+	<title>Первый ход</title>
+</head>
+
+<body>
+	<div class="sheet">
+		<img src="img/page2/sheet.png" alt="листочек" class="sheet">
+		<div onclick="window.location.href = 'rules.html';" class="rules">ПРАВИЛА</div>
+	</div>
+	<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
+	<div class="book">
+		<img src="img/page2/book.png" alt="книга" class="book">
+		<img src="img/1hod/otravlenie.png" alt="Отравление" class="pic_annotation_hod1">
+		<div class="text img_text_hod1">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век).</div>
+		<div class="text main_text_annot">
+			<p class="p_main_text_annot">
+				Отправив гонцов к ближайшим князьям, Вы либо не получаете никаких известий, либо получаете послания с отказами в помощи. Еще бы: кому нужно поддерживать молодого <a class="dictionary" href="dictionary/knyzizgoy.html">КНЯЗЯ-ИЗГОЯ</a>, да еще и
+				без большого воинства! А вот к западу от Русских земель такие силы как раз имеются. Силы, готовые за обещания земель или золота, помочь заполучить Вашему князю вожделенный престол. Вы отправляйтесь в Польшу и прибываете ко двору польского
+				короля из <a class="dictionary" href="dictionary/dinastypystov.html">ДИНАСТИИ ПЯСТОВ</a>, который довольно сносно Вас принимает, но, стоит отметить, без особого энтузиазма.
+			</p>
+		</div>
+		<!-- <a href="#"  class="next_page">
+
+
+         Тут в кнопке всплывающее окошко с переходами.
+
+
+				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-left.png" alt="вперёд" class="next_page">
+			</a>
+			 Заменил ссылку на кнопку вызова окна  -->
+		<a href="#" class="previous_page">
+			<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
+		</a>
+		<button id="show" class="open_dialog">
+			<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
+		</button>
+	</div>
+
+
+	<dialog>
+		<img src="img/popup.png" alt="" class="dialog">
+		<button id="close" class="close_dialog">
+			<img src="img/buttons/exit-cross.png" alt="закрыть" class="close_dialog">
+		</button>
+
+		<!-- <div class="dialog">
+			<ol class="dialog">
+				<li class="dialog">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть ОТЧИНУ6. Уверен, такие найдутся!</li>
+				<li class="dialog">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык ЛЯХОВ9. Я знал, что это мне не единожды пригодиться!</li>
+				<li class="dialog">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, Обзаведусь слугами и умру никому неизвестным боярином!</li>
+			</ol>
+		</div> Смотри CSS -->
+	</dialog>
+
+	<script type=text/javascript>
+		var dialog = document.querySelector('dialog');
+		document.querySelector('#show').onclick = function() {
+			dialog.showModal();
+		};
+		document.querySelector('#close').onclick = function() {
+			dialog.close();
+		};
+	</script>
+
+	<div class="point">
+		<img src="img/points.png" alt="очки" class="point">
+		<output name="number" class="point">0 Баллов</output>
+	</div>
+</body>
+
+</html>
