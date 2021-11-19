@@ -21,18 +21,49 @@
 						Находясь при особе своего князя, Вы, к своему стыду, не сумели уберечь его от отравления, совершенного коварным поваром по прозвищу <a class = "dictionary" href="dictionary/poganka.html">ПОГАНКА</a>. Не только могущество и влияние, но и само выживание <a class = "dictionary" href="dictionary/clans.html">КНЯЖЕСКОГО КЛАНА</a>, к которому он принадлежал, подверглись угрозе. Пока <a class = "dictionary" href="dictionary/cities_development.html">БУРНОЕ РАЗВИТИЕ СЕЛ И ГОРОДОВ</a> прерывается набегами <a class = "dictionary" href="dictionary/polovtsians.html">ПОЛОВЦЕВ</a>, зачастую приглашаемых на Русскую землю самими русскими князьями, Вы рискуете остаться за бортом Истории. Однако, судьба дала Вам второй шанс в лице его молодого наследника. Несмотря на то, что княжеский стол потерян, честь клана попрана, а молодой и неопытный Рюрикович превращен в <a class = "dictionary" href="dictionary/outcasts.html">КНЯЗЯ-ИЗГОЯ</a>, Вы решаете начать искать союзников для возвращения <a class = "dictionary" href="dictionary/motherland.html">ОТЧИНЫ</a>, чтобы занять достойное место в “<a class = "dictionary" href="dictionary/ryurikovichi.html">СЕМЕЙНОМ ВЛАДЕНИИ РЮРИКОВИЧЕЙ</a>”. Что Вы намерены делать в первую очередь?
 					</p>
 			</div>
-			<a href="#"  class="next_page">
+			<!-- <a href="#"  class="next_page">
 
 
-        <!-- Тут в кнопке всплывающее окошко с переходами. -->
+         Тут в кнопке всплывающее окошко с переходами.
 
 
 				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-left.png" alt="вперёд" class="next_page">
 			</a>
+			 Заменил ссылку на кнопку вызова окна  -->
 			<a href="#"  class="previous_page">
 				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
 			</a>
+			<button id="show" class="open_dialog">
+				<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
+			</button>
 		</div>
+		
+
+		<dialog>
+			<img src="img/popup.png" alt="" class="dialog">
+		<button id="close" class="close_dialog">
+			<img src="img/buttons/exit-cross.png" alt="закрыть" class="close_dialog">
+		</button>
+
+		<!-- <div class="dialog">
+			<ol class="dialog">
+				<li class="dialog">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть ОТЧИНУ6. Уверен, такие найдутся!</li>
+				<li class="dialog">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык ЛЯХОВ9. Я знал, что это мне не единожды пригодиться!</li>
+				<li class="dialog">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, Обзаведусь слугами и умру никому неизвестным боярином!</li>
+			</ol>
+		</div> Смотри CSS -->
+		</dialog>
+
+		<script type = text/javascript>
+			var dialog = document.querySelector('dialog');
+			document.querySelector('#show').onclick = function() {
+				dialog.showModal();
+			};
+			document.querySelector('#close').onclick = function() {
+				dialog.close();
+			};
+		</script>
+
 		<div class="point">
 			<img src="img/points.png" alt="очки" class="point">
 			<output name="number" class="point">0 Баллов</output>
