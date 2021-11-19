@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style2.css">
 	<title>Первый ход</title>
 </head>
-	<body>
-		<div class="sheet">
-      <img src="img/page2/sheet.png" alt="листочек" class="sheet">
-      <div onclick="window.location.href = 'rules.html';" class="rules">ПРАВИЛА</div>
-    </div>
-		<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
-		<div class="book">
-			<img src="img/page2/book.png" alt="книга" class="book">
-			<img src="img/1hod/otravlenie.png" alt="Отравление" class="pic_annotation_hod1">
-			<div class="text img_text_hod1">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век).</div>
-			<div class="text main_text_annot">
-					<p class="p_main_text_annot">
-						Прибыв ко двору польского короля из <a class = "dictionary" href="dictionary/dinastypystov.html">ДИНАСТИИ ПЯСТОВ</a>, Вы очаровывайте монарха и придворных своим знанием языка и обычаев. Польский король выделяет Вам и князю лучшие покои в своем замке, а также положительно отвечает на Ваше предложение о военном союзе.
-						<br>
-						<br>
-						<br>	
-						Впечатленный Вашим дипломатическим даром и даром <a class = "dictionary" href="dictionary/tolmach.html">ТОЛМАЧА</a>, князь не может сдержать своего восхищения. После аудиенции у польского короля Вы возвращайтесь в свои покои, куда Вам приносят княжеский вышитый пояс в качестве знака высшей признательности. Так, Вы не просто завоевали уважение своего князя, но и снискали его милость, что, конечно же, не применет сказаться на Вашем статусе и положении как при иноземных дворах, так и при будущем дворе Вашего князя.
-					</p>
-			</div>
-			<!-- <a href="#"  class="next_page">
+
+<body>
+	<div class="sheet">
+		<img src="img/page2/sheet.png" alt="листочек" class="sheet">
+		<div onclick="window.location.href = 'rules.html';" class="rules">ПРАВИЛА</div>
+	</div>
+	<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
+	<div class="book">
+		<img src="img/page2/book.png" alt="книга" class="book">
+		<img src="img/1hod/otravlenie.png" alt="Отравление" class="pic_annotation_hod1">
+		<div class="text img_text_hod1">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом.
+			Миниатюра из Радзивилловской летописи (XV век).</div>
+		<div class="text main_text_annot">
+			<p class="p_main_text_annot">
+				Прибыв ко двору польского короля из <a class="dictionary" href="dictionary/dinastypystov.html">ДИНАСТИИ ПЯСТОВ</a>,
+				Вы очаровывайте монарха и придворных своим знанием языка и обычаев. Польский король выделяет Вам и князю лучшие покои в своем
+				замке, а также положительно отвечает на Ваше предложение о военном союзе.
+				<br>
+				<br>
+				<br>
+				Впечатленный Вашим дипломатическим даром и даром <a class="dictionary" href="dictionary/tolmach.html">ТОЛМАЧА</a>,
+				князь не может сдержать своего восхищения. После аудиенции у польского короля Вы возвращайтесь в свои покои, куда Вам приносят
+				княжеский вышитый пояс в качестве знака высшей признательности.
+				Так, Вы не просто завоевали уважение своего князя, но и снискали его милость, что, конечно же,
+				не применет сказаться на Вашем статусе и положении как при иноземных дворах, так и
+				при будущем дворе Вашего князя.
+			</p>
+		</div>
+		<!-- <a href="#"  class="next_page">
 
 
          Тут в кнопке всплывающее окошко с переходами.
@@ -34,17 +44,17 @@
 				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-left.png" alt="вперёд" class="next_page">
 			</a>
 			 Заменил ссылку на кнопку вызова окна  -->
-			<a href="#"  class="previous_page">
-				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
-			</a>
-			<button id="show" class="open_dialog">
-				<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
-			</button>
-		</div>
-		
+		<a href="#" class="previous_page">
+			<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
+		</a>
+		<button id="show" class="open_dialog">
+			<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
+		</button>
+	</div>
 
-		<dialog>
-			<img src="img/popup.png" alt="" class="dialog">
+
+	<dialog>
+		<img src="img/popup.png" alt="" class="dialog">
 		<button id="close" class="close_dialog">
 			<img src="img/buttons/exit-cross.png" alt="закрыть" class="close_dialog">
 		</button>
@@ -56,21 +66,14 @@
 				<li class="dialog">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, Обзаведусь слугами и умру никому неизвестным боярином!</li>
 			</ol>
 		</div> Смотри CSS -->
-		</dialog>
+	</dialog>
+  
+	<script src="js/popup.js"></script>
 
-		<script type = text/javascript>
-			var dialog = document.querySelector('dialog');
-			document.querySelector('#show').onclick = function() {
-				dialog.showModal();
-			};
-			document.querySelector('#close').onclick = function() {
-				dialog.close();
-			};
-		</script>
+	<div class="point">
+		<img src="img/points.png" alt="очки" class="point">
+		<output name="number" class="point">0 Баллов</output>
+	</div>
+</body>
 
-		<div class="point">
-			<img src="img/points.png" alt="очки" class="point">
-			<output name="number" class="point">0 Баллов</output>
-		</div>
-	</body>
 </html>

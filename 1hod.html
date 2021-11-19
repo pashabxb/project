@@ -1,72 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style2.css">
 	<title>Первый ход</title>
 </head>
-	<body>
-		<div class="sheet">
-      <img src="img/page2/sheet.png" alt="листочек" class="sheet">
-      <div onclick="window.location.href = 'rules.html';" class="rules">ПРАВИЛА</div>
-    </div>
-		<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
-		<div class="book">
-			<img src="img/page2/book.png" alt="книга" class="book">
-			<img src="img/1hod/otravlenie.png" alt="Отравление" class="pic_annotation_hod1">
-			<div class="text img_text_hod1">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век).</div>
-			<div class="text main_text_annot">
-					<p class="p_main_text_annot">
-						Находясь при особе своего князя, Вы, к своему стыду, не сумели уберечь его от отравления, совершенного коварным поваром по прозвищу <a class = "dictionary" href="dictionary/poganka.html">ПОГАНКА</a>. Не только могущество и влияние, но и само выживание <a class = "dictionary" href="dictionary/clans.html">КНЯЖЕСКОГО КЛАНА</a>, к которому он принадлежал, подверглись угрозе. Пока <a class = "dictionary" href="dictionary/cities_development.html">БУРНОЕ РАЗВИТИЕ СЕЛ И ГОРОДОВ</a> прерывается набегами <a class = "dictionary" href="dictionary/polovtsians.html">ПОЛОВЦЕВ</a>, зачастую приглашаемых на Русскую землю самими русскими князьями, Вы рискуете остаться за бортом Истории. Однако, судьба дала Вам второй шанс в лице его молодого наследника. Несмотря на то, что княжеский стол потерян, честь клана попрана, а молодой и неопытный Рюрикович превращен в <a class = "dictionary" href="dictionary/outcasts.html">КНЯЗЯ-ИЗГОЯ</a>, Вы решаете начать искать союзников для возвращения <a class = "dictionary" href="dictionary/motherland.html">ОТЧИНЫ</a>, чтобы занять достойное место в “<a class = "dictionary" href="dictionary/ryurikovichi.html">СЕМЕЙНОМ ВЛАДЕНИИ РЮРИКОВИЧЕЙ</a>”. Что Вы намерены делать в первую очередь?
-					</p>
-			</div>
-			<!-- <a href="#"  class="next_page">
 
+<body>
+	<div class="sheet">
+		<img src="img/page2/sheet.png" alt="листочек" class="sheet">
+		<div onclick="window.location.href = 'rules.html';" class="rules_button">ПРАВИЛА</div>
+	</div>
 
-         Тут в кнопке всплывающее окошко с переходами.
+	<div class="point">
+		<img src="img/points.png" alt="очки" class="point">
+		<output name="number" class="point">0 Баллов</output>
+	</div>
 
-
-				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-left.png" alt="вперёд" class="next_page">
-			</a>
-			 Заменил ссылку на кнопку вызова окна  -->
-			<a href="#"  class="previous_page">
-				<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
-			</a>
-			<button id="show" class="open_dialog">
-				<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
-			</button>
+	<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
+	<div class="book">
+		<img src="img/page2/book.png" alt="книга" class="book">
+		<img src="img/1hod/otravlenie.png" alt="Отравление" class="pic_annotation_hod1">
+		<div class="text img_text_hod1">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя,
+			греческим стратигом. Миниатюра из Радзивилловской летописи (XV век).</div>
+		<div class="text main_text_annot">
+			<p class="p_main_text_annot">
+				Находясь при особе своего князя, Вы, к своему стыду, не сумели уберечь его от отравления, совершенного
+				коварным поваром по прозвищу <a class="dictionary" href="dictionary/poganka.html">ПОГАНКА</a>. Не только
+				могущество и влияние, но и само выживание <a class="dictionary" href="dictionary/clans.html">КНЯЖЕСКОГО
+					КЛАНА</a>, к которому он принадлежал, подверглись угрозе. Пока <a class="dictionary" href="dictionary/cities_development.html">БУРНОЕ РАЗВИТИЕ СЕЛ И ГОРОДОВ</a> прерывается набегами <a class="dictionary"
+					href="dictionary/polovtsians.html">ПОЛОВЦЕВ</a>, зачастую приглашаемых на Русскую
+				землю самими русскими князьями, Вы рискуете остаться за бортом Истории. Однако, судьба дала Вам второй
+				шанс в лице его молодого наследника. Несмотря на то, что княжеский стол потерян, честь клана попрана, а
+				молодой и неопытный Рюрикович превращен в <a class="dictionary" href="dictionary/outcasts.html">КНЯЗЯ-ИЗГОЯ</a>, Вы решаете начать искать союзников для возвращения
+				<a class="dictionary" href="dictionary/motherland.html">ОТЧИНЫ</a>, чтобы занять достойное место в “<a class="dictionary" href="dictionary/ryurikovichi.html">СЕМЕЙНОМ ВЛАДЕНИИ РЮРИКОВИЧЕЙ</a>”. Что Вы
+				намерены делать в первую очередь?
+			</p>
 		</div>
-		
 
-		<dialog>
-			<img src="img/popup.png" alt="" class="dialog">
-		<button id="close" class="close_dialog">
-			<img src="img/buttons/exit-cross.png" alt="закрыть" class="close_dialog">
+		Заменил ссылку на кнопку вызова окна
+		<a href="#" class="previous_page">
+			<img onclick="window.location.href = 'annotation.html';" src="img/buttons/arrow-right.png" alt="назад" class="previous_page">
+		</a>
+		<button id="show" class="open_dialog">
+			<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
 		</button>
+	</div>
 
-		<!-- <div class="dialog">
-			<ol class="dialog">
-				<li class="dialog">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть ОТЧИНУ6. Уверен, такие найдутся!</li>
-				<li class="dialog">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык ЛЯХОВ9. Я знал, что это мне не единожды пригодиться!</li>
-				<li class="dialog">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, Обзаведусь слугами и умру никому неизвестным боярином!</li>
-			</ol>
-		</div> Смотри CSS -->
-		</dialog>
 
-		<script type = text/javascript>
-			var dialog = document.querySelector('dialog');
-			document.querySelector('#show').onclick = function() {
-				dialog.showModal();
-			};
-			document.querySelector('#close').onclick = function() {
-				dialog.close();
-			};
-		</script>
+	<dialog>
 
-		<div class="point">
-			<img src="img/points.png" alt="очки" class="point">
-			<output name="number" class="point">0 Баллов</output>
-		</div>
-	</body>
+		<form name="quiz" action="javascript:check();" class="quizform">
+
+			<img src="img/popup.png" alt="" class="dialog">
+
+			<button id="close" class="close_dialog">
+				<img src="img/buttons/exit-cross.png" alt="закрыть" class="close_dialog">
+			</button>
+
+			<div class=" text dialog">
+				<ol class="dialog__list">
+					<a href="#" class="dialog__item">
+						<div class="dialog__count">1</div>
+						<li class="dialog__li">
+							Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть
+							<div class="dictionary" onclick="window.location.href = 'dictionary/motherland.html';">
+								ОТЧИНЫ</div>.
+							Уверен, такие найдутся!
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item">
+						<div class="dialog__count">2</div>
+						<li class="dialog__li">Необходимо обратиться за помощью к польскому королю, с которым у нас есть
+							давние
+							связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но,
+							вернув
+							свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем
+							паче,
+							что я знаю язык <div class="dictionary" onclick="window.location.href = 'dictionary/lyakhi.html';">ЛЯХОВ</div>. Я знал, что это
+							мне не единожды пригодится!</li>
+					</a>
+
+					<a href="#" class="dialog__item">
+						<div class="dialog__count">3</div>
+						<li class="dialog__li">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать
+							своей
+							жизнью
+							ради этого мальчика… Пойду-ка я лучше служить к другому князю, Обзаведусь слугами и умру никому
+							неизвестным боярином!</li>
+					</a>
+				</ol>
+
+
+				<div class="dialog__answer">
+					<img  src="img/buttons/answer-button.png" alt="ответ">
+				</div>
+
+
+			</div>
+
+	</dialog>
+
+
+	<script src="js/popup.js"></script>
+</body>
+
 </html>
+
