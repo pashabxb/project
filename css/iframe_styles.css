@@ -1,0 +1,173 @@
+* {
+  padding: 0:;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+  +
+}
+
+@font-face {
+  font-family: "PaladinRus";
+  src: url("../fonts/ofont_ru_PaladinRus.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AleksandraC";
+  src: url("../fonts/ofont_ru_AleksandraC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+}
+@font-face {
+  font-family: "PaladinRus";
+  src: url("../fonts/ofont_ru_PaladinRus.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AleksandraC";
+  src: url("../fonts/ofont_ru_AleksandraC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+div.text {
+  font-family: AleksandraC;
+  color: rgba(0, 0, 0, 1);
+}
+
+div.main_text_annot {
+  padding: 5% 0 0 0 ;
+  line-height: 5.1vw;
+  font-size: 4.5vw;
+  position: absolute;
+  border: none;
+  text-align: justify;
+  word-spacing: 0;
+  text-shadow: 0.5px 0.5px 1px grey, 0 0 2em grey;
+}
+
+.p_main_text_annot:first-letter {
+  font-family: PaladinRus;
+  font-size: 18vw;
+}
+
+/*Первая буква другим шрифтом*/
+.p_main_text_annot_def {
+  text-indent: 10%;
+}
+.dictionary {
+  color: #64260D;
+}
+
+.dictionary:hover {
+  color: #6426FF;
+}
+
+div.img_text_hod1 {
+  font-size: 5.2vw;
+  border: none;
+  text-align: center;
+
+}
+
+/*НАСТРОЙКА СКРОЛА У IFRAME*/
+body   {
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html {
+  overflow-y: auto;
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: auto; 
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    height: 30px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track-piece  {
+    background-color: ##f1dfcb;
+   -webkit-border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #64260D;
+    border: 1px solid #64260D;
+    -webkit-border-radius: 6px;
+}

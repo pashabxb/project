@@ -448,6 +448,25 @@ div.dialog {
   font-size: 250%;
   color: black;
 }
+iframe.main_text_iframe{
+  position: absolute;
+  top: 8%;
+  left: 53.5%;
+  width: 38%;
+  height: 80%;
+  border: none;
+}
+iframe.img_text_iframe{
+  font-size: 1.2vw;
+  position: absolute;
+  top: 59%;
+  left: 12%;
+  width: 30%;
+  height: 29%;
+  border: none;
+  text-align: center;
+  display: block;
+}
 
 ol {
   word-spacing: 0.1vw;
