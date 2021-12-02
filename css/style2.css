@@ -188,16 +188,7 @@ div.point {
   display: block;
 }
 
-.dialog__answer {
-	cursor: pointer;
-	position: absolute;
-  top: 92%;
-  left: 78%;
-  width: 19%;
-  height: 14%;
-  border: none;
-  display: block;
-}
+
 
 div.rules {
   position: absolute;
@@ -334,7 +325,7 @@ dialog {
   top: 0%;
   left: 10%;
   width: 80%;
-  height: 110%;
+  height: 100%;
   background-color: rgba(17, 17, 17, 0.3);
 }
 
@@ -355,6 +346,26 @@ img.open_dialog {
   width: 100%;
 }
 
+form.quizform{
+  height: 100%;
+  border: none;
+}
+
+button.previous_page{
+  background-color: rgba(0, 0, 0, 0.0);
+  position: absolute;
+  top: 87%;
+  left: 5%;
+  width: 9%;
+  display: block;
+  border: none;
+}
+img.previous_page{
+  height: 100%;
+  width: 100%;
+}
+
+
 button.open_dialog {
   background-color: rgba(0, 0, 0, 0.0);
   position: absolute;
@@ -364,10 +375,28 @@ button.open_dialog {
   border: none;
 }
 
+button.dialog__answer{
+  background-color: rgba(0, 0, 0, 0.0);
+  cursor: pointer;
+  position: absolute;
+  top: 88%;
+  left: 75%;
+  width: 25%;
+  height: 22%;
+  border: none;
+  display: block;
+}
+
+img.dialog__answer{
+  height: 100%;
+  width: 100%;
+}
+
+
 button.close_dialog {
   background-color: rgba(0, 0, 0, 0.0);
   position: absolute;
-  top: 23%;
+  top: 22%;
   left: 85%;
   width: 5%;
   border: none;
@@ -376,6 +405,8 @@ button.close_dialog {
 img.close_dialog {
   width: 100%;
 }
+
+
 
 div.dialog {
   position: absolute;
@@ -457,7 +488,7 @@ iframe.main_text_iframe{
   border: none;
 }
 iframe.img_text_iframe{
-  font-size: 1.2vw;
+
   position: absolute;
   top: 59%;
   left: 12%;
@@ -466,6 +497,14 @@ iframe.img_text_iframe{
   border: none;
   text-align: center;
   display: block;
+}
+iframe.answers_iframe{
+  border: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 110%;
 }
 
 ol {
