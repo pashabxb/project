@@ -271,9 +271,24 @@ div.img_text {
   display: block;
 }
 
+img.hod1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div.img_hod1{
+  position: relative;
+  top: -94%;
+  left: 7%;
+  width: 39%;
+  height: 53%;
+  border: none;
+
+}
 div.img_text_hod1 {
   font-size: 1.2vw;
-  position: absolute;
+  position: relative;
   top: 59%;
   left: 12%;
   width: 30%;
@@ -282,6 +297,7 @@ div.img_text_hod1 {
   text-align: center;
   display: block;
 }
+
 
 div.main_text {
   word-spacing: 0;
@@ -488,14 +504,14 @@ iframe.main_text_iframe{
   border: none;
 }
 iframe.img_text_iframe{
-
-  position: absolute;
-  top: 59%;
-  left: 12%;
+  position: relative;
+  top: -90%;
+  left: 11.5%;
   width: 30%;
   height: 29%;
   border: none;
   text-align: center;
+  vertical-align: middle;
   display: block;
 }
 iframe.answers_iframe{
