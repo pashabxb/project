@@ -17,31 +17,54 @@
 	<div class="point">
 		<img src="img/points.png" alt="очки" class="point">
 		<output name="number" class="point">0 Баллов</output>
+		<!--  <output name="number" class="point"><span id="score_count">0</span> Баллов</output>
+				Здесь не знаю как лучше, можешь любой вариант попробовать  -->
 	</div>
 
-	<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
+	<div class="bookmark">
+		<img src="img/page2/bookmark.png" alt="закладка" class="bookmark">
+		<div class="level_count">
+			<span id="level_count">1</span><span>/14</span>
+			<!-- Счётчик хода , можно сделать как в баллах, если надо-->
+		</div>
+	</div>
 	<div class="book">
 		<img src="img/page2/book.png" alt="книга" class="book">
 		<div class="img_hod1">
-			<img id="main_img"src="img/1hod/img1.png" alt="Картинка" class="hod1">
+			<img id="main_img"src="img/hod/img1.png" alt="Картинка" class="hod1">
+			<!-- Основная картинка хода, картинка для каждого хода хранится в папке img/hod.
+			Картинка для первого хода "img/hod/img1", для второго "img/hod/img2" и тд -->
+
 		</div>
-			<iframe id ="img_text_iframe"src="iframe/1hod/img_text.html" frameborder="0" class="img_text_iframe"></iframe>
+			<iframe id ="img_text_iframe"src="iframe/1hod/img_text.html" frameborder="0" class="img_text_iframe" scrolling="auto">
+				<!-- Iframe текста подписи картинки, которая используется на странице хода. 
+				Файл текста хранится в папке хода, например для первого хода "1hod/img_text.html",
+				 для второго хода "2hod/img_text.html" и тд.-->
+			</iframe>
 		<div>
-				<iframe id="main_text_iframe" scrolling="auto" src="iframe/1hod/main_text.html" frameborder="0" class="main_text_iframe"></iframe>
+				<iframe id="main_text_iframe" scrolling="auto" src="iframe/1hod/main_text.html" frameborder="0" class="main_text_iframe">
+					<!-- iframe основного текста страницы, в настоящий момент реализован с проркуткой, так что
+					для каждого хода только один html файл текста. Файл текста хранится в папке хода, например
+					для первого хода "1hod/main_text.html", для второго хода "2hod/main_text.html" и тд.
+					Также в этот iframe, нужно выводить файл "end_text.html". Там находится текст, который видит 
+					игрок после ответа на вопрос. -->
+				</iframe>
 		</div>
 
 		<button class="previous_page" onclick="location.href='annotation.html'">
+			<!-- Кнопка назад -->
 			<img src="img/buttons/arrow-right.png" alt="Назад" class="previous_page">
 		</button>
 
 		<button id="show" class="open_dialog">
+			<!-- Кнопка вперёд -->
 			<img src="img/buttons/arrow-left.png" alt="Ответ" class="open_dialog">
 		</button>
 	</div>
 
 
 	<dialog>
-
+<!-- Всплывающее окно, появлеяте после нажатия на кнопку id="show", js код "js/popup.js" -->
 		<form name="quiz" action="javascript:check();" class="quizform">
 
 			<img src="img/popup.png" alt="" class="dialog">
@@ -51,57 +74,13 @@
 			</button>
 
 			<div class=" text dialog">
-				<iframe id="answers_iframe" class="answers_iframe" src="iframe/1hod/answers.html" frameborder="0"></iframe>
-				<!-- <ol class="dialog__list">
-					<a href="#" class="dialog__item" id="answer_1">
-						<div class="dialog__count">
-							1
-						</div>
-						<li class="dialog__li">
-							Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть
-							<div class="dictionary" onclick="window.location.href = 'dictionary/motherland.html';">
-								ОТЧИНЫ
-							</div>.
-							Уверен, такие найдутся!
-						</li>
-					</a>
-
-					<a href="#" class="dialog__item" id="answer_2">
-						<div class="dialog__count">
-							2
-						</div>
-						<li class="dialog__li">
-							Необходимо обратиться за помощью к польскому королю, с которым у нас есть
-							давние
-							связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но,
-							вернув
-							свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем
-							паче,
-							что я знаю язык <div class="dictionary" onclick="window.location.href = 'dictionary/lyakhi.html';">ЛЯХОВ</div>. Я знал, что это
-							мне не единожды пригодится!
-						</li>
-					</a>
-
-					<a href="#" class="dialog__item" id="answer_3">
-						<div class="dialog__count">
-							3
-						</div>
-						<li class="dialog__li">
-							Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать
-							своей
-							жизнью
-							ради этого мальчика… Пойду-ка я лучше служить к другому князю, Обзаведусь слугами и умру никому
-							неизвестным боярином!
-						</li>
-					</a>
-				</ol> -->
-
-
+				<iframe id="answers_iframe" class="answers_iframe" src="iframe/1hod/answers.html" frameborder="0" scrolling="auto">
+					<!-- Iframe ответов на вопросы, html файл ответов для каждого хода хранится в папке хода
+					например для первого хода "1hod/answers.html", для второго "2hod/answers.html" и тд. -->
+				</iframe>
 				<button class='dialog__answer'>
 					<img  src="img/buttons/answer-button.png" alt="ответ" class="dialog__answer">
 				</button>
-
-
 			</div>
 
 	</dialog>

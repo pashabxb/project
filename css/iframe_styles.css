@@ -120,6 +120,7 @@ div.main_text_annot {
 .p_main_text_annot:first-letter {
   font-family: PaladinRus;
   font-size: 18vw;
+  line-height: 15.5vw;
 }
 
 /*Первая буква другим шрифтом*/
