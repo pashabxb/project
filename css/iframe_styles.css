@@ -123,6 +123,7 @@ div.main_text_annot {
   line-height: 15.5vw;
 }
 
+
 /*Первая буква другим шрифтом*/
 .p_main_text_annot_def {
   text-indent: 10%;
@@ -216,6 +217,7 @@ html {
   background-color: transparent;
 }
 ::-webkit-scrollbar {
+
     width: 10px;
     height: 10px;
     display: auto; 
