@@ -429,6 +429,27 @@ img.dialog__answer{
   width: 100%;
 }
 
+button.dialog__newgame{
+  background-color: rgba(0, 0, 0, 0.0);
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  width: 24%;
+  height: 20%;
+  display: block;
+  visibility: hidden;
+}
+
+img.dialog__newgame{
+  height: 100%;
+  width: 100%;
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.0);
+  border-radius: 10%;
+  border-width: 50%;
+}
+
 
 button.close_dialog {
   background-color: rgba(0, 0, 0, 0.0);
