@@ -5,50 +5,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style2.css">
+
 	<title>Первый ход</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+	</script>
 </head>
 
 <body>
 	<div class="sheet">
 		<img src="img/page2/sheet.png" alt="листочек" class="sheet">
 		<div onclick="window.location.href = 'rules.html';" class="rules_button">ПРАВИЛА</div>
-	</div> 
+	</div>
 
 	<div class="point">
 		<img src="img/points.png" alt="очки" class="point">
 		<output name="number" class="point">0 Баллов</output>
-		<!--  <output name="number" class="point"><span id="score_count">0</span> Баллов</output>
-				Здесь не знаю как лучше, можешь любой вариант попробовать  -->
 	</div>
 
-	<div class="bookmark">
-		<img src="img/page2/bookmark.png" alt="закладка" class="bookmark">
-		<div class="level_count">
-			<span id="level_count">1</span><span>/14</span>
-			<!-- Счётчик хода , можно сделать как в баллах, если надо-->
-		</div>
-	</div>
+	<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
 	<div class="book">
 		<img src="img/page2/book.png" alt="книга" class="book">
 		<div class="img_hod1">
 			<img id="main_img"src="img/hod/img1.png" alt="Картинка" class="hod1">
-			<!-- Основная картинка хода, картинка для каждого хода хранится в папке img/hod.
-			Картинка для первого хода "img/hod/img1", для второго "img/hod/img2" и тд -->
-
+			<!-- Основная картника, для каждого хода хранятся в img/hod/ картинка первого хода img1, 
+			второго хода img2 и тд -->
 		</div>
-			<iframe id ="img_text_iframe"src="iframe/1hod/img_text.html" frameborder="0" class="img_text_iframe" scrolling="auto">
-				<!-- Iframe текста подписи картинки, которая используется на странице хода. 
-				Файл текста хранится в папке хода, например для первого хода "1hod/img_text.html",
-				 для второго хода "2hod/img_text.html" и тд.-->
-			</iframe>
-		<div>
-				<iframe id="main_text_iframe" scrolling="auto" src="iframe/1hod/main_text.html" frameborder="0" class="main_text_iframe">
-					<!-- iframe основного текста страницы, в настоящий момент реализован с проркуткой, так что
-					для каждого хода только один html файл текста. Файл текста хранится в папке хода, например
-					для первого хода "1hod/main_text.html", для второго хода "2hod/main_text.html" и тд.
-					Также в этот iframe, нужно выводить файл "end_text.html". Там находится текст, который видит 
-					игрок после ответа на вопрос. -->
-				</iframe>
+		<div class="text img_text_hod1" id="img_text">
+			<!-- Место в которое js вставляет html код из файла img_text, оно хранится в папке levels, 
+			для каждого хода своя папка. -->
+		</div>
+		<div class="text main_text">
+				<p class="p_main_text_annot" id="main_text">
+					<!-- Место в которое js вставляет html код из файла main_text или end_text, оно хранится в папке levels, 
+			для каждого хода своя папка. -->
+				</p>
 		</div>
 
 		<button class="previous_page" onclick="location.href='annotation.html'">
@@ -64,7 +54,7 @@
 
 
 	<dialog>
-<!-- Всплывающее окно, появлеяте после нажатия на кнопку id="show", js код "js/popup.js" -->
+
 		<form name="quiz" action="javascript:check();" class="quizform">
 
 			<img src="img/popup.png" alt="" class="dialog">
@@ -74,14 +64,16 @@
 			</button>
 
 			<div class=" text dialog">
-				<iframe id="answers_iframe" class="answers_iframe" src="iframe/1hod/answers.html" frameborder="0" scrolling="auto">
-					<!-- Iframe ответов на вопросы, html файл ответов для каждого хода хранится в папке хода
-					например для первого хода "1hod/answers.html", для второго "2hod/answers.html" и тд. -->
-				</iframe>
-				<button class='dialog__answer' id="confirm_answer">
+				<div class="text">
+			<ol class="dialog__list" id="aswers_list">
+				<!-- Место в которое js вставляет html код из файла answers, оно хранится в папке levels, 
+			для каждого хода своя папка.
+			У каждого вопроса есть своя функция, которую он вызывает при нажатии на него -->
+			</ol>
+			</div>
+				<button class='dialog__answer'>
 					<img  src="img/buttons/answer-button.png" alt="ответ" class="dialog__answer">
 				</button>
-
 				<button class='dialog__newgame' id="start_newgame">
 					<img  src="img/buttons/newgame_button.png" alt="новая игра" class="dialog__newgame">
 				</button>
@@ -89,7 +81,7 @@
 
 	</dialog>
 
-
+	<script src="js/paste.js"></script>
 	<script src="js/popup.js"></script>
 </body>
 
