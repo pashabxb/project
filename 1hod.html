@@ -18,10 +18,13 @@
 
 	<div class="point">
 		<img src="img/points.png" alt="очки" class="point">
-		<output name="number" class="point">0 Баллов</output>
+		<output name="number" class="point"><span id="points">0</span> Баллов</output>
 	</div>
 
-	<div class="bookmark"><img src="img/page2/bookmark.png" alt="закладка" class="bookmark"></div>
+	<div class="bookmark">
+		<img src="img/page2/bookmark.png" alt="закладка" class="bookmark">
+		<div id="level_number" class="level_number">1/14</div>
+	</div>
 	<div class="book">
 		<img src="img/page2/book.png" alt="книга" class="book">
 		<div class="img_hod1">
@@ -70,10 +73,10 @@
 			У каждого вопроса есть своя функция, которую он вызывает при нажатии на него -->
 			</ol>
 			</div>
-				<button class='dialog__answer'>
+				<button class='dialog__answer' id = "give_answer">
 					<img  src="img/buttons/answer-button.png" alt="ответ" class="dialog__answer">
 				</button>
-				<button class='dialog__newgame' id="start_newgame">
+				<button class='dialog__newgame' id="start_newgame" onclick="location.href='start.html'">
 					<img  src="img/buttons/newgame_button.png" alt="новая игра" class="dialog__newgame">
 				</button>
 			</div>

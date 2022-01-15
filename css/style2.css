@@ -140,6 +140,15 @@ img.bookmark {
   width: 17%;
   z-index: ;
 }
+div.level_number{
+  position: absolute;
+  top: 7%;
+  left: 25%;
+  border: none;
+  font-family: PaladinRus;
+  font-size: 2vw;
+  color: #891A30;
+}
 
 div.sheet {
   display: inline-block;
@@ -419,7 +428,6 @@ button.dialog__newgame{
   width: 24%;
   height: 20%;
   display: block;
-  visibility: hidden;
 }
 
 img.dialog__newgame{
