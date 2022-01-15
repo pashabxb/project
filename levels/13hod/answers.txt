@@ -1,0 +1,20 @@
+<!-- 13 ход  -->
+					<a href="#" class="dialog__item" id="answer_1" onclick="answer_1()">
+						<div class="dialog__count">
+							1
+						</div>
+						<li class="dialog__li">
+							Что ж… Нужно сражаться. Вперед, за мной, храброе воинство!!!
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item" id="answer_2" onclick="answer_2()">
+						<div class="dialog__count">
+							2
+						</div>
+						<li class="dialog__li">
+							Вот он вожделенный момент, которого я так ждал! Нужно переметнуться к вражескому князю и
+							сделаться его боярином. Он одарит меня землями и сделает богатым!
+						</li>
+					</a>
+

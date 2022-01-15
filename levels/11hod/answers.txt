@@ -1,0 +1,31 @@
+<!-- 11 ход -->
+					<a href="#" class="dialog__item" id="answer_1" onclick="answer_1()">
+						<div class="dialog__count">
+							1
+						</div>
+						<li class="dialog__li">
+							Это всё вранье! Как она посмела будить меня и рассказывать всякие глупости!
+							Хан – мой друг, он не может нас предать!
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item" id="answer_2" onclick="answer_2()">
+						<div class="dialog__count">
+							2
+						</div>
+						<li class="dialog__li">
+							Убить нас?! Ха! Княже, доставай меч! Будем биться!
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item" id="answer_3" onclick="answer_3()">
+						<div class="dialog__count">
+							3
+						</div>
+						<li class="dialog__li">
+							Что ж… Чего можно было ждать от половцев? Уже много лет они терзают
+							Русскую землю и хотят еще… Не бывать этому! Мы сбежим сейчас отсюда,
+							но потом, когда княжество будет наше, мы соберем всех князей Русской
+							земли, чтобы разгромить враждебные нам половецкие кланы! В путь!
+						</li>
+					</a>

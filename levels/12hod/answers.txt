@@ -1,0 +1,20 @@
+<!-- 12 ход -->
+					<a href="#" class="dialog__item" id="answer_1" onclick="answer_1()">
+						<div class="dialog__count">
+							1
+						</div>
+						<li class="dialog__li">
+							Участвовать в чужом походе? Мы лучше поищем других князей,
+							которые согласятся помочь нам, не надеясь, что мы сгинем в гуще сражений за их интересы!
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item" id="answer_2" onclick="answer_2()">
+						<div class="dialog__count">
+							2
+						</div>
+						<li class="dialog__li">
+							Что ж, если таково предложение Новгорода, мы согласны. Надеюсь,
+							новгородский князь сдержит свое слово
+						</li>
+					</a>

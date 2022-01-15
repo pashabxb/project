@@ -1,0 +1,30 @@
+<!-- 9 ход -->
+					<a href="#" class="dialog__item" id="answer_1" onclick="answer_1()">
+						<div class="dialog__count">
+							1
+						</div>
+						<li class="dialog__li">
+							Негоже православному человеку отказывать Патриарху в просьбе.
+							Конечно, я отвезу его послание латинянам
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item" id="answer_2" onclick="answer_2()"> 
+						<div class="dialog__count">
+							2
+						</div>
+						<li class="dialog__li">
+							Я сюда приехал, чтобы быть гонцом ромеев?! Если ему так надо,
+							то пусть сам и отвозит свои послания!
+						</li>
+					</a>
+
+					<a href="#" class="dialog__item" id="answer_3" onclick="answer_3()">
+						<div class="dialog__count">
+							3
+						</div>
+						<li class="dialog__li">
+							Я не буду выполнять поручения Константинопольского патриарха!
+							Я всегда был и буду за автокефалию Русской Церкви!
+						</li>
+					</a>
