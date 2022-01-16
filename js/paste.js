@@ -4,6 +4,8 @@ var level_number = 1;
 var showDialog = true;
 var answer = 1;
 var end_game = false;
+var points = 0;
+var answerPoints = 0;
 
 document.querySelector('#close').onclick = function() {
   dialog.close();
@@ -38,20 +40,52 @@ document.querySelector('#close').onclick = function() {
 
 
 
-function answer_1() {
+function answer_1(score,trueAnswer,lastAnswer) {
   answer = 1;
+  answerPoints = score;
+  console.log(trueAnswer);
+  if (trueAnswer == false){
+    end_game = true;
+  } else {
+    end_game = false;
+  }
 };
-function answer_2() {
+function answer_2(score,trueAnswer,lastAnswer) {
   answer = 2;
+  answerPoints = score;
+  console.log(trueAnswer);
+  if (trueAnswer == false){
+    end_game = true;
+  } else {
+    end_game = false;
+  }
 };
-function answer_3() {
+function answer_3(score,trueAnswer,lastAnswer) {
   answer = 3;
+  answerPoints = score;
+  console.log(trueAnswer);
+  if (trueAnswer == false){
+    end_game = true;
+  } else {
+    end_game = false;
+  }
 };
 
 document.querySelector('#give_answer').onclick = function() {
-  dialog.close();
-  showDialog = false;
-  $('#main_text').load('..//levels/'+ level_number +'hod/end_text'+answer+'.txt');
+  if(end_game == true){
+    dialog.close();
+    showDialog = true;
+    $('#main_text').load('..//levels/'+ level_number +'hod/end_text'+answer+'.txt');
+    $('#aswers_list').hide();
+    $('#start_newgame').show();
+    $('#give_answer').hide();
+  } else {
+    dialog.close();
+    showDialog = false;
+    points = answerPoints + points;
+    $('#points').text(points);
+    $('#main_text').load('..//levels/'+ level_number +'hod/end_text'+answer+'.txt');
+  }
 }
 
 /*  if (answer = 1){

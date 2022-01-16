@@ -1,5 +1,5 @@
 <!-- 14 ход  -->
-					<a href="#" class="dialog__item" id="answer_1" onclick="answer_1()">
+					<a href="#" class="dialog__item" id="answer_1" onclick="answer_1(10,true,true)">
 						<div class="dialog__count">
 							1
 						</div>
@@ -8,7 +8,7 @@
 						</li>
 					</a>
 
-					<a href="#" class="dialog__item" id="answer_2" onclick="answer_2()">
+					<a href="#" class="dialog__item" id="answer_2" onclick="answer_2(10,true,true)">
 						<div class="dialog__count">
 							2
 						</div>
