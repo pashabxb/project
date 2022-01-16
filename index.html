@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Начальный экран</title>
+</head>
+
+<body>
+	<div class="sheet">
+		<img src="img/page1/sheet.png" alt="Лист" class="sheet">
+	</div>
+	<div class="book">
+		<img src="img/page1/book.png" alt="книга" class="book">
+		<a href="#" class="start-game">
+			<img onclick="window.location.href = 'page2.html';" src="img/buttons/main-button.png" alt="начать игру" class="start-game">
+		</a>
+		<a href="#" class="rules">
+			<img onclick="window.location.href = 'rules.html';" src="img/buttons/rule_button.png" alt="Правила игры" class="rules">
+		</a>
+		<div class="text">
+			<p class="aleks">ИНТЕРАКТИВНЫЙ КВЕСТ:</p>
+			<p class="paladin">«Как стать владетельным боярином в эпоху раздробленности»</p>
+		</div>
+	</div>
+	<div class="point">
+		<img src="img/points.png" alt="очки" class="point">
+		<output name="number" class="point">0 Баллов</output>
+	</div>
+</body>
+
+</html>
